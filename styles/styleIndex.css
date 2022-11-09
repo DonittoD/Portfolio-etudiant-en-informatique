@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    /* border: 1px solid ;  */
+    text-align : center;
+   background-color: #0e4a5b;
+  }
+
+header{
+    text-align : center; 
+    display: block;
+    background-color: #fffaf2bf;
+    position : fixed ;
+    width : 100% ; 
+    z-index:10;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.oio{
+  float: right ;
+
+}
+
+.minT{
+  padding-left: 3%;
+
+}
+
+.boiteTitre{
+  background-color: rgba(255, 255, 255, 0.692);
+  padding:20px;
+  font-family: arial;
+  text-align : center;
+  margin-bottom: 1%;
+
+}
+
+.bouton {
+  text-decoration: none;
+  background-color: #f3f3f3ab;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2%;
+  padding:7px;
+}
+
+.bouton:hover{
+    background-color: #affaff;
+
+}
+.presentationT{
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: arial ;
+  font-size: 1.1em;
+
+}
+.paragraphe{
+    text-align : left;
+    width: 80% ;
+    margin : auto ;
+    background-color: #f2f2f278;
+    margin-bottom: 15%;
+    padding-bottom: 5%; 
+    position: relative;
+    top:15vh;
+
+}
+
+aside{
+    text-align : center;
+    float: center;
+    width: 100% ;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+/* @keyframes */
+
+.presentation{
+  text-align: justify;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: arial ;
+  font-size: 1.1em;
+  margin-bottom: 1%;
+  padding-left: 5%;
+
+}
+
+.switch{
+  padding : 1%;
+  color:#0e4a5b;
+  cursor: pointer;
+  background-color: #f3f3f3ab;
+  margin-right: 2%;
+  transition-duration: .3s;
+}
+.switch:hover{
+  background-color: #affaff;
+
+}
+
+.exp{
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgba(228, 228, 228, 0.389);
+  padding-bottom: 3%;
+  
+  
+}
+
+.boiteContact{
+  background-color: rgba(255, 255, 255, 0.367) ;
+  font-family: arial;
+  text-align : center;
+  margin-bottom: 1%;
+  padding:20px;
+
+}
+.paragrapheContact{
+  text-align : left;
+  background-color: #d7d7d7;
+  width: 80% ;
+  margin : auto ;
+  margin-bottom: 10%;
+  position: relative;
+  top:15vh;
+  display: flex; 
+  
+}
+
+.boxContact{
+  padding-left: 10%;
+  PADDING-right: 10%;
+  padding-bottom: 10%;
+
+}
+.contact{
+  border: 1px solid ;
+  text-align : left;
+  width: 60% ;
+  font-family: verdana;
+  border-radius: 10px;
+  padding : 3%;
+  display: flex;
+
+}
+
+form{
+  padding-top: 4%;
+
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1%; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 0.5%; 
+  margin-bottom: 0.2; 
+  resize: vertical
+
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+    padding : 10px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right ;
+}
+
+#section2{
+  margin: auto;
+  width:60%;
+}
+
+.submit:hover{
+  background-color: #45a049;
+}
+  .flex{
+    width: 17% ;
+    margin : left ;
+    display: flex;
+    font-family: verdana;
+    float: left;
+  }
+
+footer{
+  text-align : center; 
+  display: block;
+  background-color: rgb(230, 230, 230) ;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  
+}
+
+a{
+  text-decoration: none;
+  color: #1d7892;
+}
+
+.responsiveMenu > img{
+  width:60px;
+  display:none;
+}
+
+@media (max-width: 965px) {
+  .flex{
+    margin : auto ;
+    float: none ;
+    width: auto; 
+  }
+  .box{
+    width: 90vw;
+  }
+  .paragraphe{
+    width: auto;
+  }
+  .bouton{
+    display: block;
+  }
+  header > nav{
+    visibility: hidden;
+    transition-delay: .2s;
+    /* background-color: #2b7285; */
+    background-color: #d5dfe2;
+    padding: 20px;
+  }
+  .responsiveMenu > img{
+    display:block;
+  }
+  .responsiveMenu{
+    /* background: #2b7285; */
+    background-color: #d5dfe2;
+  }
+  header{
+    background: none;
+  }
+  #section2{
+    width:100%;
+  }
+  .responsiveMenu:hover + nav {
+    visibility: visible;
+  }
+  header > nav:hover{
+    visibility: visible;
+  }
+}
+
+
+
+table{
+  width: 100%;
+}
+#subject{
+  height:100px;
+}
+td{
+  width: 40%;
+}
+
