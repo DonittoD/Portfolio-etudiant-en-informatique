@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0; 
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    /* border: 1px solid ;  */
+    text-align : center;
+   /* background-color: #6ee2ff;   */
+   /* background-color: #96a3aa;  */
+    background-image: url("image/minecraft.png");  
+    /* background-repeat: no-repeat; */
+     /* background-image: url("image/background.jpg");   */
+
+}
+
+header{
+    text-align : center; 
+    display: block;
+    background-color: rgb(255, 255, 255) ;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+
+}
+
+.oio{
+  float: right ;
+
+}
+
+.minT{
+  padding-left: 3%;
+
+}
+
+.boiteTitre{
+  background-color: rgb(255, 255, 255) ;
+  font-family: arial;
+  text-align : center;
+  margin-bottom: 1%;
+
+}
+
+.bouton {
+  background-color: #0088ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2%;
+  padding : 0.5% ;
+
+}
+
+.bouton:hover{
+  background-color: #0074ef;
+
+}
+.presentationT{
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: arial ;
+  font-size: 1.1em;
+
+}
+.paragraphe{
+    text-align : left;
+    width: 80% ;
+    margin : auto ;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    padding-bottom: 5%; 
+
+}
+
+aside{
+    text-align : center;
+    float: center;
+    width: 100% ;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+/* @keyframes */
+
+.presentation{
+  text-align: justify;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: arial ;
+  font-size: 1.1em;
+  margin-bottom: 1%;
+  padding-left: 5%;
+
+}
+
+.switch{
+  padding : 1%;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 2%;
+
+}
+.switch:hover{
+  background-color: #affaff;
+
+}
+
+.exp{
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgb(228, 228, 228);
+  padding-bottom: 3%;
+  border-radius: 10px;
+  
+}
+
+.boiteContact{
+  background-color: rgb(255, 255, 255) ;
+  font-family: arial;
+  text-align : center;
+  margin-bottom: 1%;
+  width: 100% ; 
+
+}
+.paragrapheContact{
+  text-align : left;
+  background-color: #f2f2f2;
+
+}
+
+.boxContact{
+  padding-left: 10%;
+  PADDING-right: 10%;
+  padding-bottom: 5%;
+
+}
+.contact{
+  border: 1px solid ;
+  text-align : left;
+  width: 60% ;
+  font-family: verdana;
+  border-radius: 10px;
+  padding : 3%;
+
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1%; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 0.5%; 
+  margin-bottom: 0.2; 
+  resize: vertical
+
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+    padding : 10px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right ;
+
+}
+
+.submit:hover{
+  background-color: #45a049;
+}
+  .flex{
+    width: 17% ;
+    margin : left ;
+    display: flex;
+    font-family: verdana;
+    float: left;
+    background-color: rgb(150, 229, 255) ;
+    
+  }
+
+footer{
+  text-align : center; 
+  display: block;
+  background-color: rgb(230, 230, 230) ;
+  padding-bottom: 3%;
+  padding-top: 3%;
+
+}
+
+@media (max-width: 905px) {
+  .flex{
+    margin : auto ;
+    float: none ;
+    width: auto; 
+  }
+  .box{
+    width: 90vw;
+  }
+  .paragraphe{
+    width: auto;
+  }
+  .bouton{
+    display: flex;
+  }
+}
