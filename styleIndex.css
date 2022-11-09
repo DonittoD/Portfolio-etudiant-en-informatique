@@ -10,22 +10,19 @@
 body{
     /* border: 1px solid ;  */
     text-align : center;
-   /* background-color: #6ee2ff;   */
-   /* background-color: #96a3aa;  */
-    background-image: url("image/minecraft.png");  
-    /* background-repeat: no-repeat; */
-     /* background-image: url("image/background.jpg");   */
-
-}
+   background-color: #0e4a5b;
+  }
 
 header{
     text-align : center; 
     display: block;
-    background-color: rgb(255, 255, 255) ;
-    padding-bottom: 3%;
-    margin-bottom: 5%;
-    padding-top: 2%;
+    background-color: #fffaf2bf;
 
+    position : fixed ;
+    width : 100% ; 
+    z-index:10;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 
 .oio{
@@ -39,7 +36,8 @@ header{
 }
 
 .boiteTitre{
-  background-color: rgb(255, 255, 255) ;
+  background-color: rgba(255, 255, 255, 0.692);
+  padding:20px;
   font-family: arial;
   text-align : center;
   margin-bottom: 1%;
@@ -47,18 +45,18 @@ header{
 }
 
 .bouton {
-  background-color: #0088ff;
-  color: white;
+  text-decoration: none;
+  background-color: #f3f3f3ab;
+  color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin: 2%;
-  padding : 0.5% ;
-
+  padding:7px;
 }
 
 .bouton:hover{
-  background-color: #0074ef;
+    background-color: #affaff;
 
 }
 .presentationT{
@@ -72,10 +70,11 @@ header{
     text-align : left;
     width: 80% ;
     margin : auto ;
-    background-color: #f2f2f2;
-    border-radius: 10px;
+    background-color: #f2f2f278;
     margin-bottom: 15%;
     padding-bottom: 5%; 
+    position: relative;
+    top:15vh;
 
 }
 
@@ -105,13 +104,11 @@ aside{
 
 .switch{
   padding : 1%;
-  color: rgb(0, 0, 0);
-  border-radius: 4px;
+  color:#0e4a5b;
   cursor: pointer;
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: #f3f3f3ab;
   margin-right: 2%;
-
+  transition-duration: .3s;
 }
 .switch:hover{
   background-color: #affaff;
@@ -121,30 +118,30 @@ aside{
 .exp{
   margin-left: 25%;
   margin-right: 25%;
-  background-color: rgb(228, 228, 228);
+  background-color: rgba(228, 228, 228, 0.389);
   padding-bottom: 3%;
-  border-radius: 10px;
+  
   
 }
 
 .boiteContact{
-  background-color: rgb(255, 255, 255) ;
+  background-color: rgba(255, 255, 255, 0.367) ;
   font-family: arial;
   text-align : center;
   margin-bottom: 1%;
-  width: 100% ; 
+  padding:20px;
 
 }
 .paragrapheContact{
   text-align : left;
-  background-color: #f2f2f2;
+  background-color: #d7d7d7;
 
 }
 
 .boxContact{
   padding-left: 10%;
   PADDING-right: 10%;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 
 }
 .contact{
@@ -178,7 +175,11 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: right ;
+}
 
+#section2{
+  margin: auto;
+  width:60%;
 }
 
 .submit:hover{
@@ -190,8 +191,6 @@ input[type=submit] {
     display: flex;
     font-family: verdana;
     float: left;
-    background-color: rgb(150, 229, 255) ;
-    
   }
 
 footer{
@@ -200,10 +199,20 @@ footer{
   background-color: rgb(230, 230, 230) ;
   padding-bottom: 3%;
   padding-top: 3%;
-
+  
 }
 
-@media (max-width: 905px) {
+a{
+  text-decoration: none;
+  color: #1d7892;
+}
+
+.responsiveMenu > img{
+  width:60px;
+  display:none;
+}
+
+@media (max-width: 965px) {
   .flex{
     margin : auto ;
     float: none ;
@@ -216,6 +225,43 @@ footer{
     width: auto;
   }
   .bouton{
-    display: flex;
+    display: block;
+  }
+  header > nav{
+    visibility: hidden;
+    transition-delay: .2s;
+    background-color: #2b728570;
+    padding: 20px;
+  }
+  .responsiveMenu > img{
+    display:block;
+  }
+  .responsiveMenu{
+    background: #2b728570;
+  }
+  header{
+    background: none;
+  }
+  #section2{
+    width:100%;
+  }
+  .responsiveMenu:hover + nav {
+    visibility: visible;
+  }
+  header > nav:hover{
+    visibility: visible;
   }
 }
+
+
+
+table{
+  width: 100%;
+}
+#subject{
+  height:100px;
+}
+td{
+  width: 40%;
+}
+
